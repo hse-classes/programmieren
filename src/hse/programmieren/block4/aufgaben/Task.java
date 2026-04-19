@@ -5,7 +5,7 @@ import java.util.*;
 public class Task {
 
     static void main() {
-        forLoop();
+        whileLoop();
     }
 
     // Array
@@ -128,7 +128,7 @@ public class Task {
         }
     }
 
-    public static void whileLoop() {
+    public static void whileLoopBefore() {
         System.out.println("Reifendruckkontrolle");
 
         for (int tire = 1; tire <= 4; tire++) {
@@ -149,5 +149,27 @@ public class Task {
         System.out.println("Reifendruckkontrolle beendet");
     }
 
+    public static void whileLoop() {
+        System.out.println("Reifendruckkontrolle");
+
+        int tire = 0;
+        while (tire < 4) {
+            tire++;
+            System.out.println("Prüfe Reifen " + tire);
+
+            int pressure = (new Random().nextInt(10)) + 15;
+            System.out.println("Druck: " + pressure + " bar");
+
+            if (pressure >= 20) {
+                System.out.println("Reifen " + tire + " OK");
+                continue;
+            }
+
+            System.out.println("WARNUNG: Reifen " + tire + " zu wenig Druck!");
+            System.out.println("Reifen " + tire + " muss aufgepumpt werden");
+        }
+
+        System.out.println("Reifendruckkontrolle beendet");
+    }
 
 }
