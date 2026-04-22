@@ -1,6 +1,6 @@
 package hse.programmieren.block8.examples;
 
-public enum IGNITION_STATE {
+public enum IgnitionState {
     LOCK,
     ACC,
     ON,
