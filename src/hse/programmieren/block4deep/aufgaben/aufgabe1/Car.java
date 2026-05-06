@@ -1,16 +1,16 @@
-package hse.programmieren.block4deep.aufgaben;
+package hse.programmieren.block4deep.aufgaben.aufgabe1;
 
 import java.util.List;
 
 public class Car {
 
-    private String model;
-    private int buildYear;
-    private String color;
-    private boolean leftHandDrive;
-    private boolean secondHand;
+    private final String model;
+    private final int buildYear;
+    private final String color;
+    private final boolean leftHandDrive;
+    private final boolean secondHand;
     private double odometer;
-    private List<String> features;
+    private final List<String> features;
 
     public Car(String model, int buildYear, String color, boolean leftHandDrive, boolean secondHand, double odometer, List<String> features) {
         this.model = model;
