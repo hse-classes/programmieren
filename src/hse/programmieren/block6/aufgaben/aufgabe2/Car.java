@@ -27,7 +27,7 @@ public abstract class Car {
     public void steer(SteeringState steeringState) {
         switch (steeringState) {
             case RIGHT -> this.steeringState = SteeringState.STRAIGHT;
-            case STRAIGHT, LEFT -> this.steeringState = SteeringState.LEFT;
+            case STRAIGHT, LEFT -> this.steeringState = SteeringState.LEFT; // TODO KMO fix
         }
     }
 

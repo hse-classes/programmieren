@@ -7,18 +7,13 @@ import java.util.Arrays;
 public class Errors {
 
     static void main() {
-        example11();
-
-        String bla = "";
-
-
-
+        example10();
     }
 
     static void example1() {
         String[] array = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"};
 
-        for (int index = 0; index <= 10; index++) {
+        for (int index = 0; index < 10; index++) {
             String value = array[index];
             System.out.println(value);
         }
@@ -34,8 +29,8 @@ public class Errors {
     }
 
     static void example3() {
-        double value1 = 1;
-        double value2 = 2;
+        int value1 = 1;
+        int value2 = 2;
 
         double result = value1 / value2;
         System.out.println(result);
@@ -71,29 +66,29 @@ public class Errors {
         System.out.println(first+second);
     }
 
+//    static void example7() {
+//        Audi audi = new Audi();
+//
+//        audi.add(200);
+//        for (int i = 0; i < 13; i++) {
+//            audi.drive();
+//        }
+//        System.out.println(audi.getFuelLevel());
+//        System.out.println(audi.getEnergyLevel());
+//    }
+
     static void example7() {
-        Audi audi = new Audi();
-
-        audi.add(200);
-        for (int i = 0; i < 13; i++) {
-            audi.drive();
-        }
-        System.out.println(audi.getFuelLevel());
-        System.out.println(audi.getEnergyLevel());
-    }
-
-    static void example8() {
-        String password = "geheim123";
+        String password = "geheim123 ".trim();
         String input = "geheim123";
 
-        if (input.equals(password)) {
+        if (input == password) {
             System.out.println("Login erfolgreich");
         } else {
             System.out.println("Falsches Passwort");
         }
     }
 
-    static void example9() {
+    static void example8() {
         String firstName = null;
         String lastName = "null";
 
@@ -102,7 +97,7 @@ public class Errors {
         }
     }
 
-    static void example10() {
+    static void example9() {
         int[] array = new int[5];
         array[0] = 1;
         array[1] = 2;
@@ -118,7 +113,7 @@ public class Errors {
 
     }
 
-    static void example11() {
+    static void example10() {
         int reservations = 3;
 
         System.out.println("Nur noch: " + --reservations);

@@ -3,15 +3,6 @@ package hse.programmieren.block7.exercise;
 public class Hausi {
 
     public static int process(int number) {
-
-        Number a  = 1;
-        Integer b = 2;
-        Double c = 4.5;
-
-        c.doubleValue();
-
-
-
         int number2 = 0;
 
         while (number > 0) {

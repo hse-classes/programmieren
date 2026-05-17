@@ -14,6 +14,7 @@ public class Methoden {
         if (text == null) {
             return -1;
         }
+
         return text.indexOf(word);
     }
 
